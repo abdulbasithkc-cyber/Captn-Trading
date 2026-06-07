@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request a customized quote for general trading, product sourcing, bulk distribution, or import/export logistics from CAPTN TRADING.">
+  <title>Request a Quote | CAPTN TRADING | Procurement Inquiry</title>
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header id="main-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="header-logo-link">
+        <div class="logo-icon">C</div>
+        <span class="logo-text">CAPTN <span>TRADING</span></span>
+      </a>
+      
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="primary-nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="industries.html" class="nav-link">Industries</a></li>
+          <li><a href="import-export.html" class="nav-link">Import & Export</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="blog.html" class="nav-link">News</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+          <li class="nav-cta"><a href="quote.html" class="nav-link active btn btn-primary btn-sm" style="color: var(--color-primary);" id="nav-cta-quote-btn">Get a Quote</a></li>
+        </ul>
+      </nav>
+      
+      <button class="hamburger" aria-expanded="false" aria-controls="primary-nav-menu" aria-label="Toggle navigation menu" id="hamburger-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Hero Header -->
+  <section class="page-hero" id="quote-page-hero">
+    <div class="container">
+      <h1>Request a Customized Quote</h1>
+      <nav class="breadcrumbs" aria-label="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right" style="font-size: 0.75rem; align-self: center;"></i>
+        <span>Request a Quote</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Multi-step Wizard Section -->
+  <section class="section" id="quote-wizard-section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="subtitle">Procurement Form</span>
+        <h2>Structured Trade Inquiry</h2>
+        <p>Complete our multi-step quote wizard to detail your sourcing, logistics, or wholesale supply requirements. Our trade division will review and compile options.</p>
+      </div>
+
+      <!-- Step Progress Bar -->
+      <div class="quote-progress animate-on-scroll">
+        <div class="progress-line-fill"></div>
+        <div class="progress-step-item active" id="prog-step-1">
+          1
+          <span class="progress-step-label">Category</span>
+        </div>
+        <div class="progress-step-item" id="prog-step-2">
+          2
+          <span class="progress-step-label">Specifications</span>
+        </div>
+        <div class="progress-step-item" id="prog-step-3">
+          3
+          <span class="progress-step-label">Contact Details</span>
+        </div>
+      </div>
+
+      <!-- Form Card and Steps -->
+      <div class="quote-form-wizard animate-on-scroll delay-100">
+        <div class="form-card">
+          <form id="quote-wizard-form" novalidate>
+            <!-- Hidden field to store category choice -->
+            <input type="hidden" id="selected-category" name="category" value="">
+
+            <!-- Step 1: Select Category -->
+            <div class="wizard-step active" id="wizard-step-1">
+              <h3 class="wizard-step-title">Step 1: Choose Product or Service Category</h3>
+              <p style="font-size: 0.95rem; margin-bottom: 2rem;">Please select the core category that aligns with your procurement interest:</p>
+              
+              <div class="category-select-grid">
+                <div class="category-select-card" data-value="fmcg" id="cat-card-fmcg">
+                  <i class="fas fa-basket-shopping" aria-hidden="true"></i>
+                  <span>FMCG & Packaged Foods</span>
+                </div>
+                <div class="category-select-card" data-value="construction" id="cat-card-construction">
+                  <i class="fas fa-trowel-bricks" aria-hidden="true"></i>
+                  <span>Construction Materials</span>
+                </div>
+                <div class="category-select-card" data-value="industrial" id="cat-card-industrial">
+                  <i class="fas fa-gears" aria-hidden="true"></i>
+                  <span>Industrial Supplies</span>
+                </div>
+                <div class="category-select-card" data-value="electronics" id="cat-card-electronics">
+                  <i class="fas fa-microchip" aria-hidden="true"></i>
+                  <span>Technology & Electronics</span>
+                </div>
+                <div class="category-select-card" data-value="hospitality" id="cat-card-hospitality">
+                  <i class="fas fa-hotel" aria-hidden="true"></i>
+                  <span>Hospitality & Linens</span>
+                </div>
+                <div class="category-select-card" data-value="logistics" id="cat-card-logistics">
+                  <i class="fas fa-truck-container" aria-hidden="true"></i>
+                  <span>Import / Export Logistics</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2: Input Specs -->
+            <div class="wizard-step" id="wizard-step-2">
+              <h3 class="wizard-step-title">Step 2: Detail Product Specifications</h3>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="product-name">Product or Service Name <span style="color: var(--color-primary-light);">*</span></label>
+                  <input type="text" id="product-name" name="product_name" placeholder="e.g. Portland Cement CEM I / Steel Rebar 12mm" required aria-required="true">
+                </div>
+                <div class="form-group">
+                  <label for="quantity">Target Quantity / Volume <span style="color: var(--color-primary-light);">*</span></label>
+                  <input type="text" id="quantity" name="quantity" placeholder="e.g. 50 Metric Tons / 10,000 Pcs" required aria-required="true">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="specs-details">Detailed Technical Specifications / Packaging / Shipping Term Requirements</label>
+                <textarea id="specs-details" name="specs_details" placeholder="Please list size details, grade levels, packaging preferences (e.g. bulk, pallets), preferred Incoterms (e.g. CIF Khalifa Port, FOB Shanghai), or special regulatory clearances needed."></textarea>
+              </div>
+            </div>
+
+            <!-- Step 3: Contact Info -->
+            <div class="wizard-step" id="wizard-step-3">
+              <h3 class="wizard-step-title">Step 3: Contact Information</h3>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="client-name">Contact Full Name <span style="color: var(--color-primary-light);">*</span></label>
+                  <input type="text" id="client-name" name="client_name" placeholder="John Doe" required aria-required="true">
+                </div>
+                <div class="form-group">
+                  <label for="client-company">Company / Business Entity</label>
+                  <input type="text" id="client-company" name="client_company" placeholder="Example General Trading WLL">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="client-email">Business Email <span style="color: var(--color-primary-light);">*</span></label>
+                  <input type="email" id="client-email" name="client_email" placeholder="johndoe@example.com" required aria-required="true">
+                </div>
+                <div class="form-group">
+                  <label for="client-phone">Direct Phone Number <span style="color: var(--color-primary-light);">*</span></label>
+                  <input type="tel" id="client-phone" name="client_phone" placeholder="+973 3333 4444" required aria-required="true">
+                </div>
+              </div>
+            </div>
+
+            <!-- Step Navigation buttons -->
+            <div class="wizard-nav">
+              <button type="button" class="btn btn-secondary btn-sm" id="prev-step" style="display: none;"><i class="fas fa-arrow-left"></i> Previous Step</button>
+              <button type="button" class="btn btn-navy btn-sm" id="next-step" style="margin-left: auto;">Continue Step <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </form>
+
+          <!-- Success Confirmation Banner (Toggled in main.js) -->
+          <div id="wizard-success" class="form-success-message" style="display: none;">
+            <i class="fas fa-circle-check"></i>
+            <h3>Quote Request Logged</h3>
+            <p>Thank you for submitting your detailed trade inquiry to CAPTN TRADING. Our sourcing desk in Bahrain will coordinate specifications with global certified manufacturers and issue a formal pricing proposal with estimated lead times within 48 business hours.</p>
+            <button class="btn btn-primary btn-sm" style="margin-top: 1.5rem;" onclick="location.reload()">Submit Another Quote Request</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer id="main-footer">
+    <div class="container footer-grid">
+      <!-- Col 1: Bio -->
+      <div class="footer-col">
+        <a href="index.html" class="logo" style="margin-bottom: 1.5rem;" id="footer-logo-link">
+          <div class="logo-icon" style="width: 32px; height: 32px; font-size: 1rem;">C</div>
+          <span class="logo-text" style="font-size: 1.25rem;">CAPTN <span>TRADING</span></span>
+        </a>
+        <p style="margin-top: 1rem;">CAPTN TRADING is a premier commercial entity registered in the Kingdom of Bahrain. We connect global manufacturers with regional growth markets via robust shipping channels, rigorous product verification, and customer-first supply partnerships.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon" aria-label="Facebook Page"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram Page"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      
+      <!-- Col 2: Navigation Links -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="products.html">Product Catalog</a></li>
+          <li><a href="industries.html">Sectors Served</a></li>
+          <li><a href="gallery.html">Media Gallery</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Services Links -->
+      <div class="footer-col">
+        <h3>Trade Services</h3>
+        <ul class="footer-links">
+          <li><a href="services.html">General Trading</a></li>
+          <li><a href="services.html">Import & Export</a></li>
+          <li><a href="services.html">Wholesale Sourcing</a></li>
+          <li><a href="import-export.html">Logistics Network</a></li>
+          <li><a href="quote.html">Custom Quotes</a></li>
+          <li><a href="blog.html">Industry News</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact & Newsletter -->
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <ul class="footer-contact">
+          <li>
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <span>Manama Financial District, Tower 4, Suite 802, Kingdom of Bahrain</span>
+          </li>
+          <li>
+            <i class="fas fa-phone" aria-hidden="true"></i>
+            <span>+973 1720 0450</span>
+          </li>
+          <li>
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <span>info@captntrading.com</span>
+          </li>
+        </ul>
+        
+        <h3 style="margin-top: 1.5rem; font-size: 1rem;">Newsletter Subscription</h3>
+        <form class="newsletter-form" id="newsletter-subscription-form">
+          <div class="newsletter-group">
+            <input type="email" placeholder="Your email address" aria-label="Newsletter email address" required id="newsletter-email-input">
+            <button type="submit" aria-label="Subscribe to newsletter" id="newsletter-submit-btn"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="container footer-bottom">
+      <p>&copy; 2026 CAPTN TRADING. All Rights Reserved. Commercial Registration No: 140234-1.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="contact.html">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Widgets -->
+  <a href="https://wa.me/97317200450" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with CAPTN TRADING sales support on WhatsApp" id="whatsapp-floating-widget">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <button class="back-to-top" aria-label="Scroll back to top of the page" id="back-to-top-widget">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

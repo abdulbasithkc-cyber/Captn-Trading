@@ -1,0 +1,8 @@
+{
+  "name": "captn-trading",
+  "version": "1.0.0",
+  "description": "CAPTN TRADING Corporate Website",
+  "scripts": {
+    "dev": "python -m http.server 8000"
+  }
+}
