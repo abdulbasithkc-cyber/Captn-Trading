@@ -8,6 +8,8 @@ export default function Hero() {
 
   useEffect(() => {
     let index = 0;
+    let glitchInterval;
+    
     const interval = setInterval(() => {
       index = (index + 1) % words.length;
       
@@ -16,13 +18,15 @@ export default function Hero() {
       const targetWord = words[index];
       const randomChars = "01<>[]{}-+%%**";
       
-      const glitchInterval = setInterval(() => {
-        setGlitchText(prev => 
-          targetWord.split("").map((char, idx) => {
-            if (idx < iterations) return targetWord[idx];
-            return randomChars[Math.floor(Math.random() * randomChars.length)];
-          }).join("")
-        );
+      if (glitchInterval) clearInterval(glitchInterval);
+      
+      glitchInterval = setInterval(() => {
+        const nextText = targetWord.split("").map((char, idx) => {
+          if (idx < iterations) return targetWord[idx];
+          return randomChars[Math.floor(Math.random() * randomChars.length)];
+        }).join("");
+        
+        setGlitchText(nextText);
         
         iterations += 1/3;
         if (iterations >= targetWord.length + 1) {
@@ -33,7 +37,10 @@ export default function Hero() {
       
     }, 4000);
 
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+      if (glitchInterval) clearInterval(glitchInterval);
+    };
   }, []);
 
   return (

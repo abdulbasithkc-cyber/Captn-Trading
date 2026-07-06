@@ -22,8 +22,9 @@ export default function About() {
     let currentLine = 0;
     const addNextLine = () => {
       if (currentLine < consoleScript.length) {
-        setTerminalLines(prev => [...prev, consoleScript[currentLine].text]);
+        const lineText = consoleScript[currentLine].text;
         const nextDelay = consoleScript[currentLine].delay;
+        setTerminalLines(prev => [...prev, lineText]);
         currentLine++;
         setTimeout(addNextLine, nextDelay);
       }
