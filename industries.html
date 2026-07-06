@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Discover the industries we serve in Bahrain and across the GCC, including FMCG, food and beverage, construction, industrial, healthcare, and hospitality sectors.">
-  <title>Industries We Serve | CAPTN TRADING | Global Supply Sectors</title>
+  <meta name="description" content="Discover the sectors served by CAPTN TRADE OS, managing regulatory filings and supply buffer schedules in Bahrain and across the GCC.">
+  <title>Sectors Served | CAPTN TRADING | Sourcing Segments</title>
   <!-- Google Fonts & FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -12,26 +12,46 @@
 </head>
 <body>
 
-  <!-- Header Section -->
+  <!-- Futuristic Boot Loader -->
+  <div id="boot-loader" aria-hidden="true">
+    <div class="boot-terminal">
+      <div class="boot-header">
+        <span class="boot-dot red"></span>
+        <span class="boot-dot yellow"></span>
+        <span class="boot-dot green"></span>
+      </div>
+      <div class="boot-log" id="boot-log"></div>
+    </div>
+    <div class="boot-progress-container" style="max-width: 750px;">
+      <div class="boot-progress-bar"></div>
+    </div>
+  </div>
+
+  <!-- Background Overlays -->
+  <canvas id="matrix-canvas"></canvas>
+  <div class="cyber-grid"></div>
+  <div class="mouse-glow"></div>
+
+  <!-- Header Section (Glass HUD Navbar) -->
   <header id="main-header">
     <div class="container nav-container">
       <a href="index.html" class="logo" id="header-logo-link">
         <div class="logo-icon">C</div>
-        <span class="logo-text">CAPTN <span>TRADING</span></span>
+        <span class="logo-text">CAPTN <span>OS</span></span>
       </a>
       
       <nav aria-label="Main Navigation">
         <ul class="nav-menu" id="primary-nav-menu">
           <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About Us</a></li>
-          <li><a href="services.html" class="nav-link">Services</a></li>
-          <li><a href="products.html" class="nav-link">Products</a></li>
-          <li><a href="industries.html" class="nav-link active">Industries</a></li>
-          <li><a href="import-export.html" class="nav-link">Import & Export</a></li>
-          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-          <li><a href="blog.html" class="nav-link">News</a></li>
-          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
-          <li class="nav-cta"><a href="quote.html" class="btn btn-primary btn-sm" id="nav-cta-quote-btn">Get a Quote</a></li>
+          <li><a href="about.html" class="nav-link">About OS</a></li>
+          <li><a href="services.html" class="nav-link">Modules</a></li>
+          <li><a href="products.html" class="nav-link">Catalog</a></li>
+          <li><a href="industries.html" class="nav-link active">Sectors</a></li>
+          <li><a href="import-export.html" class="nav-link">Routing</a></li>
+          <li><a href="gallery.html" class="nav-link">Logs</a></li>
+          <li><a href="blog.html" class="nav-link">Briefs</a></li>
+          <li><a href="contact.html" class="nav-link">Terminal</a></li>
+          <li class="nav-cta"><a href="quote.html" class="btn btn-cyan btn-sm" id="nav-cta-quote-btn" style="padding: 0.6rem 1.25rem;">Deploy Core</a></li>
         </ul>
       </nav>
       
@@ -46,11 +66,11 @@
   <!-- Page Hero Header -->
   <section class="page-hero" id="industries-page-hero">
     <div class="container">
-      <h1>Industries We Serve</h1>
+      <h1>Sectors Served</h1>
       <nav class="breadcrumbs" aria-label="breadcrumb">
-        <a href="index.html">Home</a>
-        <i class="fas fa-chevron-right" style="font-size: 0.75rem; align-self: center;"></i>
-        <span>Industries</span>
+        <a href="index.html">Home OS</a>
+        <i class="fas fa-chevron-right" style="font-size: 0.75rem; align-self: center; color: var(--color-neon-cyan);"></i>
+        <span>Sectors</span>
       </nav>
     </div>
   </section>
@@ -59,111 +79,111 @@
   <section class="section" id="industries-list-section">
     <div class="container">
       <div class="section-header animate-on-scroll">
-        <span class="subtitle">Sectors We Supply</span>
-        <h2>Diverse Industry Coverage</h2>
-        <p>CAPTN TRADING is structured to accommodate the distinct supply patterns, technical parameters, and regulatory conditions of various economic sectors.</p>
+        <span class="subtitle">Logistical Integration</span>
+        <h2>Diverse Sourcing Verticals</h2>
+        <p>CAPTN OS adapts sourcing parameters, custom tariffs, and delivery timelines to accommodate different industry constraints.</p>
       </div>
 
       <div class="grid-2 animate-on-scroll delay-100">
         <!-- Industry 1 -->
-        <div style="background-color: var(--color-bg-light); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 3rem; display: flex; gap: 1.5rem; flex-direction: column;">
+        <div class="glass-card" style="display: flex; gap: 1.5rem; flex-direction: column;">
           <div style="display: flex; align-items: center; gap: 1rem;">
-            <div style="width: 50px; height: 50px; background-color: var(--color-primary); color: var(--color-gold); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+            <div style="width: 50px; height: 50px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.25); color: var(--color-neon-cyan); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: var(--shadow-neon-cyan);">
               <i class="fas fa-cart-shopping"></i>
             </div>
             <h3 style="font-size: 1.5rem;">FMCG & Consumer Goods</h3>
           </div>
-          <p style="font-size: 0.95rem; margin-bottom: 0;">We supply retail grocery networks and wholesale distributors with fast-moving consumer goods, including personal toiletries, household detergents, cosmetics, and packaged paper goods. We prioritize high-turnover brands and ensure secure container transit.</p>
+          <p style="font-size: 0.95rem; margin-bottom: 0; color: var(--color-text-secondary);">We supply retail grocery networks and wholesale distributors with fast-moving consumer goods, including personal toiletries, household detergents, cosmetics, and packaged paper goods. We prioritize high-turnover brands and ensure secure container transit.</p>
         </div>
 
         <!-- Industry 2 -->
-        <div style="background-color: var(--color-bg-light); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 3rem; display: flex; gap: 1.5rem; flex-direction: column;">
+        <div class="glass-card" style="display: flex; gap: 1.5rem; flex-direction: column;">
           <div style="display: flex; align-items: center; gap: 1rem;">
-            <div style="width: 50px; height: 50px; background-color: var(--color-primary); color: var(--color-gold); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+            <div style="width: 50px; height: 50px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.25); color: var(--color-neon-cyan); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: var(--shadow-neon-cyan);">
               <i class="fas fa-bowl-food"></i>
             </div>
             <h3 style="font-size: 1.5rem;">Food & Beverage</h3>
           </div>
-          <p style="font-size: 0.95rem; margin-bottom: 0;">Meeting GCC food safety directives is critical. We source grains, vegetable oils, dairy products, canned vegetables, and confectionery. We manage cold-chain shipping logistics to maintain structural integrity and freshness from port to distribution point.</p>
+          <p style="font-size: 0.95rem; margin-bottom: 0; color: var(--color-text-secondary);">Meeting GCC food safety directives is critical. We source grains, vegetable oils, dairy products, canned vegetables, and confectionery. We manage cold-chain shipping logistics to maintain structural integrity and freshness from port to distribution point.</p>
         </div>
 
         <!-- Industry 3 -->
-        <div style="background-color: var(--color-bg-light); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 3rem; display: flex; gap: 1.5rem; flex-direction: column;">
+        <div class="glass-card" style="display: flex; gap: 1.5rem; flex-direction: column;">
           <div style="display: flex; align-items: center; gap: 1rem;">
-            <div style="width: 50px; height: 50px; background-color: var(--color-primary); color: var(--color-gold); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+            <div style="width: 50px; height: 50px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.25); color: var(--color-neon-cyan); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: var(--shadow-neon-cyan);">
               <i class="fas fa-trowel-bricks"></i>
             </div>
             <h3 style="font-size: 1.5rem;">Construction Materials</h3>
           </div>
-          <p style="font-size: 0.95rem; margin-bottom: 0;">Supporting Bahrain's architectural and infrastructure growth, we supply steel rebars, structural beams, bulk cement clinker, aggregates, gypsum boards, and premium architectural finishing elements matching precise structural engineer specs.</p>
+          <p style="font-size: 0.95rem; margin-bottom: 0; color: var(--color-text-secondary);">Supporting Bahrain's architectural and infrastructure growth, we supply steel rebars, structural beams, bulk cement clinker, aggregates, gypsum boards, and premium architectural finishing elements matching precise structural engineer specs.</p>
         </div>
 
         <!-- Industry 4 -->
-        <div style="background-color: var(--color-bg-light); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 3rem; display: flex; gap: 1.5rem; flex-direction: column;">
+        <div class="glass-card" style="display: flex; gap: 1.5rem; flex-direction: column;">
           <div style="display: flex; align-items: center; gap: 1rem;">
-            <div style="width: 50px; height: 50px; background-color: var(--color-primary); color: var(--color-gold); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+            <div style="width: 50px; height: 50px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.25); color: var(--color-neon-cyan); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: var(--shadow-neon-cyan);">
               <i class="fas fa-screwdriver-wrench"></i>
             </div>
             <h3 style="font-size: 1.5rem;">Industrial & Manufacturing</h3>
           </div>
-          <p style="font-size: 0.95rem; margin-bottom: 0;">We keep production plants active. We source factory consumables, industrial valves, safety clothing (PPE), abrasive wheels, machinery spare parts, electrical switchgear, and specialty chemical inputs under stringent compliance codes.</p>
+          <p style="font-size: 0.95rem; margin-bottom: 0; color: var(--color-text-secondary);">We keep production plants active. We source factory consumables, industrial valves, safety clothing (PPE), abrasive wheels, machinery spare parts, electrical switchgear, and specialty chemical inputs under stringent compliance codes.</p>
         </div>
 
         <!-- Industry 5 -->
-        <div style="background-color: var(--color-bg-light); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 3rem; display: flex; gap: 1.5rem; flex-direction: column;">
+        <div class="glass-card" style="display: flex; gap: 1.5rem; flex-direction: column;">
           <div style="display: flex; align-items: center; gap: 1rem;">
-            <div style="width: 50px; height: 50px; background-color: var(--color-primary); color: var(--color-gold); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+            <div style="width: 50px; height: 50px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.25); color: var(--color-neon-cyan); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: var(--shadow-neon-cyan);">
               <i class="fas fa-prescription-bottle-medical"></i>
             </div>
             <h3 style="font-size: 1.5rem;">Healthcare Products</h3>
           </div>
-          <p style="font-size: 0.95rem; margin-bottom: 0;">We supply medical centers and pharmacies with approved wellness consumables, hospital beds, sanitizers, surgical masks, and diagnostics kits. We coordinate clearance and registration with Bahrain's National Health Regulatory Authority (NHRA).</p>
+          <p style="font-size: 0.95rem; margin-bottom: 0; color: var(--color-text-secondary);">We supply medical centers and pharmacies with approved wellness consumables, hospital beds, sanitizers, surgical masks, and diagnostics kits. We coordinate clearance and registration with Bahrain's National Health Regulatory Authority (NHRA).</p>
         </div>
 
         <!-- Industry 6 -->
-        <div style="background-color: var(--color-bg-light); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 3rem; display: flex; gap: 1.5rem; flex-direction: column;">
+        <div class="glass-card" style="display: flex; gap: 1.5rem; flex-direction: column;">
           <div style="display: flex; align-items: center; gap: 1rem;">
-            <div style="width: 50px; height: 50px; background-color: var(--color-primary); color: var(--color-gold); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+            <div style="width: 50px; height: 50px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.25); color: var(--color-neon-cyan); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: var(--shadow-neon-cyan);">
               <i class="fas fa-microchip"></i>
             </div>
             <h3 style="font-size: 1.5rem;">Electronics & Technology</h3>
           </div>
-          <p style="font-size: 0.95rem; margin-bottom: 0;">From electrical relays and semiconductor microchips to consumer hardware components, we bridge global silicon hubs with regional tech fabricators and IT wholesale networks, ensuring safe static-free transportation.</p>
+          <p style="font-size: 0.95rem; margin-bottom: 0; color: var(--color-text-secondary);">From electrical relays and semiconductor microchips to consumer hardware components, we bridge global silicon hubs with regional tech fabricators and IT wholesale networks, ensuring safe static-free transportation.</p>
         </div>
 
         <!-- Industry 7 -->
-        <div style="background-color: var(--color-bg-light); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 3rem; display: flex; gap: 1.5rem; flex-direction: column;">
+        <div class="glass-card" style="display: flex; gap: 1.5rem; flex-direction: column;">
           <div style="display: flex; align-items: center; gap: 1rem;">
-            <div style="width: 50px; height: 50px; background-color: var(--color-primary); color: var(--color-gold); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+            <div style="width: 50px; height: 50px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.25); color: var(--color-neon-cyan); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: var(--shadow-neon-cyan);">
               <i class="fas fa-hotel"></i>
             </div>
             <h3 style="font-size: 1.5rem;">Hospitality & Catering</h3>
           </div>
-          <p style="font-size: 0.95rem; margin-bottom: 0;">We supply Bahrain's luxury hotels, resorts, and corporate cafeterias with Operating Supplies and Equipment (OS&E). This includes high-grade cotton linens, tableware, room accessories, and commercial kitchen utensils.</p>
+          <p style="font-size: 0.95rem; margin-bottom: 0; color: var(--color-text-secondary);">We supply Bahrain's luxury hotels, resorts, and corporate cafeterias with Operating Supplies and Equipment (OS&E). This includes high-grade cotton linens, tableware, room accessories, and commercial kitchen utensils.</p>
         </div>
 
         <!-- Industry 8 -->
-        <div style="background-color: var(--color-bg-light); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 3rem; display: flex; gap: 1.5rem; flex-direction: column;">
+        <div class="glass-card" style="display: flex; gap: 1.5rem; flex-direction: column;">
           <div style="display: flex; align-items: center; gap: 1rem;">
-            <div style="width: 50px; height: 50px; background-color: var(--color-primary); color: var(--color-gold); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+            <div style="width: 50px; height: 50px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.25); color: var(--color-neon-cyan); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: var(--shadow-neon-cyan);">
               <i class="fas fa-plug-circle-check"></i>
             </div>
             <h3 style="font-size: 1.5rem;">Infrastructure & Utilities</h3>
           </div>
-          <p style="font-size: 0.95rem; margin-bottom: 0;">We procure electrical transformers, high-tension cabling, marine fenders, sewage treatment filters, and public lighting components for municipal utility networks, coordinating with ministries to satisfy public tenders.</p>
+          <p style="font-size: 0.95rem; margin-bottom: 0; color: var(--color-text-secondary);">We procure electrical transformers, high-tension cabling, marine fenders, sewage treatment filters, and public lighting components for municipal utility networks, coordinating with ministries to satisfy public tenders.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA Banner Section -->
-  <section class="section section-bg-navy" style="background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary-light) 100%); text-align: center; border-bottom: 5px solid var(--color-gold);" id="industries-cta-banner-section">
+  <section class="section" style="background: radial-gradient(circle at 50% 50%, rgba(157, 80, 187, 0.1), transparent); text-align: center; border-top: var(--border-glass); border-bottom: 5px solid var(--color-neon-cyan);" id="industries-cta-banner-section">
     <div class="container animate-on-scroll">
-      <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Looking for a Strategic Industry Supplier?</h2>
-      <p style="font-size: 1.15rem; max-width: 700px; margin: 0 auto 2.5rem auto; color: rgba(255,255,255,0.85);">Partner with CAPTN TRADING. Let us establish a contract supply agreement that aligns with your annual material and product budgets.</p>
+      <h2 style="font-size: 2.75rem; margin-bottom: 1rem;">Need an Enterprise-Grade Sourcing Node?</h2>
+      <p style="font-size: 1.15rem; max-width: 700px; margin: 0 auto 3rem auto; color: var(--color-text-secondary);">Partner with CAPTN TRADE OS. Let us configure a contract supply agreement that aligns with your annual material and product budgets.</p>
       <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-        <a href="quote.html" class="btn btn-primary btn-lg" id="industries-banner-quote-btn">Request a Customized Quote <i class="fas fa-file-signature"></i></a>
-        <a href="contact.html" class="btn btn-secondary btn-lg" id="industries-banner-contact-btn">Speak With an Expert <i class="fas fa-phone"></i></a>
+        <a href="quote.html" class="btn btn-cyan btn-lg" id="industries-banner-quote-btn">Configure OS Request <i class="fas fa-terminal"></i></a>
+        <a href="contact.html" class="btn btn-glass btn-lg" id="industries-banner-contact-btn">Speak to Sourcing Desk <i class="fas fa-headset"></i></a>
       </div>
     </div>
   </section>
@@ -171,54 +191,53 @@
   <!-- Footer Section -->
   <footer id="main-footer">
     <div class="container footer-grid">
-      <!-- Col 1: Bio -->
+      <!-- Col 1 -->
       <div class="footer-col">
         <a href="index.html" class="logo" style="margin-bottom: 1.5rem;" id="footer-logo-link">
           <div class="logo-icon" style="width: 32px; height: 32px; font-size: 1rem;">C</div>
-          <span class="logo-text" style="font-size: 1.25rem;">CAPTN <span>TRADING</span></span>
+          <span class="logo-text" style="font-size: 1.25rem;">CAPTN <span>OS</span></span>
         </a>
-        <p style="margin-top: 1rem;">CAPTN TRADING is a premier commercial entity registered in the Kingdom of Bahrain. We connect global manufacturers with regional growth markets via robust shipping channels, rigorous product verification, and customer-first supply partnerships.</p>
+        <p style="margin-top: 1rem;">CAPTN TRADE OS is a premium global sourcing and digital logistics platform registered in the Kingdom of Bahrain. We optimize GCC supply chains via advanced cargo routing and quality assurance audits.</p>
         <div class="footer-socials">
-          <a href="#" class="social-icon" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="social-icon" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-icon" aria-label="Facebook Page"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-icon" aria-label="Instagram Page"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         </div>
       </div>
       
-      <!-- Col 2: Navigation Links -->
+      <!-- Col 2 -->
       <div class="footer-col">
-        <h3>Quick Links</h3>
+        <h3>Quick Access</h3>
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Our Services</a></li>
+          <li><a href="index.html">Home OS</a></li>
+          <li><a href="about.html">About OS</a></li>
+          <li><a href="services.html">App Modules</a></li>
           <li><a href="products.html">Product Catalog</a></li>
           <li><a href="industries.html">Sectors Served</a></li>
-          <li><a href="gallery.html">Media Gallery</a></li>
+          <li><a href="gallery.html">Visual Logs</a></li>
         </ul>
       </div>
 
-      <!-- Col 3: Services Links -->
+      <!-- Col 3 -->
       <div class="footer-col">
-        <h3>Trade Services</h3>
+        <h3>Trade Systems</h3>
         <ul class="footer-links">
-          <li><a href="services.html">General Trading</a></li>
-          <li><a href="services.html">Import & Export</a></li>
-          <li><a href="services.html">Wholesale Sourcing</a></li>
-          <li><a href="import-export.html">Logistics Network</a></li>
-          <li><a href="quote.html">Custom Quotes</a></li>
-          <li><a href="blog.html">Industry News</a></li>
+          <li><a href="services.html">Autonomous Trade</a></li>
+          <li><a href="services.html">Customs Clearance</a></li>
+          <li><a href="services.html">Bulk Sourcing</a></li>
+          <li><a href="import-export.html">Logistics Routing</a></li>
+          <li><a href="quote.html">Configure Request</a></li>
+          <li><a href="blog.html">Decrypted Briefs</a></li>
         </ul>
       </div>
 
-      <!-- Col 4: Contact & Newsletter -->
+      <!-- Col 4 -->
       <div class="footer-col">
-        <h3>Contact Us</h3>
+        <h3>Command Nodes</h3>
         <ul class="footer-contact">
           <li>
-            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-            <span>Manama Financial District, Tower 4, Suite 802, Kingdom of Bahrain</span>
+            <i class="fas fa-location-dot" aria-hidden="true"></i>
+            <span>Manama Corporate District, Tower 4, Suite 802, Kingdom of Bahrain</span>
           </li>
           <li>
             <i class="fas fa-phone" aria-hidden="true"></i>
@@ -226,15 +245,15 @@
           </li>
           <li>
             <i class="fas fa-envelope" aria-hidden="true"></i>
-            <span>info@captntrading.com</span>
+            <span>sys@captntrading.com</span>
           </li>
         </ul>
         
-        <h3 style="margin-top: 1.5rem; font-size: 1rem;">Newsletter Subscription</h3>
+        <h3 style="margin-top: 1.5rem; font-size: 0.95rem;">System Briefings</h3>
         <form class="newsletter-form" id="newsletter-subscription-form">
           <div class="newsletter-group">
-            <input type="email" placeholder="Your email address" aria-label="Newsletter email address" required id="newsletter-email-input">
-            <button type="submit" aria-label="Subscribe to newsletter" id="newsletter-submit-btn"><i class="fas fa-paper-plane"></i></button>
+            <input type="email" placeholder="Your terminal email" aria-label="Email" required id="newsletter-email-input">
+            <button type="submit" id="newsletter-submit-btn"><i class="fas fa-paper-plane"></i></button>
           </div>
         </form>
       </div>
@@ -242,21 +261,21 @@
 
     <!-- Footer Bottom -->
     <div class="container footer-bottom">
-      <p>&copy; 2026 CAPTN TRADING. All Rights Reserved. Commercial Registration No: 140234-1.</p>
+      <p>&copy; 2026 CAPTN TRADE OS. All Logs Protected. CR: 140234-1.</p>
       <div class="footer-bottom-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="contact.html">Sitemap</a>
+        <a href="#">Security Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="contact.html">Diagnostics</a>
       </div>
     </div>
   </footer>
 
-  <!-- Floating Widgets -->
-  <a href="https://wa.me/97317200450" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with CAPTN TRADING sales support on WhatsApp" id="whatsapp-floating-widget">
+  <!-- Floating HUD elements -->
+  <a href="https://wa.me/97317200450" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Node Link" id="whatsapp-floating-widget">
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <button class="back-to-top" aria-label="Scroll back to top of the page" id="back-to-top-widget">
+  <button class="back-to-top" aria-label="Reset position" id="back-to-top-widget">
     <i class="fas fa-arrow-up"></i>
   </button>
 

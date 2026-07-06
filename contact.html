@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact CAPTN TRADING's headquarters in Manama, Bahrain. Submit our quick inquiry form to connect with our trading and sourcing specialists.">
-  <title>Contact Us | CAPTN TRADING | General Trading Bahrain</title>
+  <meta name="description" content="Connect to CAPTN TRADE OS command center in Bahrain. Inquire about sourcing catalogs and customs clearance services.">
+  <title>Contact Console | CAPTN TRADING | Sourcing Desk</title>
   <!-- Google Fonts & FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -12,26 +12,46 @@
 </head>
 <body>
 
-  <!-- Header Section -->
+  <!-- Futuristic Boot Loader -->
+  <div id="boot-loader" aria-hidden="true">
+    <div class="boot-terminal">
+      <div class="boot-header">
+        <span class="boot-dot red"></span>
+        <span class="boot-dot yellow"></span>
+        <span class="boot-dot green"></span>
+      </div>
+      <div class="boot-log" id="boot-log"></div>
+    </div>
+    <div class="boot-progress-container" style="max-width: 750px;">
+      <div class="boot-progress-bar"></div>
+    </div>
+  </div>
+
+  <!-- Background Overlays -->
+  <canvas id="matrix-canvas"></canvas>
+  <div class="cyber-grid"></div>
+  <div class="mouse-glow"></div>
+
+  <!-- Header Section (Glass HUD Navbar) -->
   <header id="main-header">
     <div class="container nav-container">
       <a href="index.html" class="logo" id="header-logo-link">
         <div class="logo-icon">C</div>
-        <span class="logo-text">CAPTN <span>TRADING</span></span>
+        <span class="logo-text">CAPTN <span>OS</span></span>
       </a>
       
       <nav aria-label="Main Navigation">
         <ul class="nav-menu" id="primary-nav-menu">
           <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About Us</a></li>
-          <li><a href="services.html" class="nav-link">Services</a></li>
-          <li><a href="products.html" class="nav-link">Products</a></li>
-          <li><a href="industries.html" class="nav-link">Industries</a></li>
-          <li><a href="import-export.html" class="nav-link">Import & Export</a></li>
-          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-          <li><a href="blog.html" class="nav-link">News</a></li>
-          <li><a href="contact.html" class="nav-link active">Contact Us</a></li>
-          <li class="nav-cta"><a href="quote.html" class="btn btn-primary btn-sm" id="nav-cta-quote-btn">Get a Quote</a></li>
+          <li><a href="about.html" class="nav-link">About OS</a></li>
+          <li><a href="services.html" class="nav-link">Modules</a></li>
+          <li><a href="products.html" class="nav-link">Catalog</a></li>
+          <li><a href="industries.html" class="nav-link">Sectors</a></li>
+          <li><a href="import-export.html" class="nav-link">Routing</a></li>
+          <li><a href="gallery.html" class="nav-link">Logs</a></li>
+          <li><a href="blog.html" class="nav-link">Briefs</a></li>
+          <li><a href="contact.html" class="nav-link active">Terminal</a></li>
+          <li class="nav-cta"><a href="quote.html" class="btn btn-cyan btn-sm" id="nav-cta-quote-btn" style="padding: 0.6rem 1.25rem;">Deploy Core</a></li>
         </ul>
       </nav>
       
@@ -46,103 +66,110 @@
   <!-- Page Hero Header -->
   <section class="page-hero" id="contact-page-hero">
     <div class="container">
-      <h1>Contact Us</h1>
+      <h1>Command Node</h1>
       <nav class="breadcrumbs" aria-label="breadcrumb">
-        <a href="index.html">Home</a>
-        <i class="fas fa-chevron-right" style="font-size: 0.75rem; align-self: center;"></i>
-        <span>Contact Us</span>
+        <a href="index.html">Home OS</a>
+        <i class="fas fa-chevron-right" style="font-size: 0.75rem; align-self: center; color: var(--color-neon-cyan);"></i>
+        <span>Terminal</span>
       </nav>
     </div>
   </section>
 
-  <!-- Contact Panel & Form Grid -->
-  <section class="section" id="contact-main-section">
+  <!-- Contact Form & Info Grid -->
+  <section class="section" id="contact-form-section">
     <div class="container grid-2">
-      <!-- Contact Info Cards Column -->
-      <div class="contact-info-panel animate-on-scroll">
-        <span class="section-header-left" style="margin-bottom: 2rem;">
-          <span class="subtitle">Get In Touch</span>
-          <h2>Let's Discuss Business Opportunities</h2>
-        </span>
-        <p>Whether you represent an international manufacturer looking for GCC distribution or a local commercial enterprise seeking reliable sourcing, our trade board is ready to assist you.</p>
+      <!-- Contact Info -->
+      <div class="contact-info animate-on-scroll">
+        <span class="hud-tag">OFFICIAL DETAILS</span>
+        <h2 style="margin-top: 1rem; margin-bottom: 2rem;">Platform Headquarters</h2>
         
-        <!-- Info Cards -->
-        <div class="contact-card">
-          <div class="contact-icon-box"><i class="fas fa-map-location-dot"></i></div>
-          <div class="contact-detail">
-            <h3>Registered Office Address</h3>
-            <p>Manama Financial District, Tower 4, Suite 802, Kingdom of Bahrain</p>
-          </div>
-        </div>
-        
-        <div class="contact-card">
-          <div class="contact-icon-box"><i class="fas fa-phone-volume"></i></div>
-          <div class="contact-detail">
-            <h3>Phone Support</h3>
-            <p><a href="tel:+97317200450">+973 1720 0450</a> (Sun - Thu, 8:00 AM - 5:00 PM AST)</p>
-          </div>
-        </div>
+        <ul class="footer-contact" style="font-size: 1.1rem; gap: 2rem;">
+          <li style="display: flex; gap: 1.25rem; align-items: flex-start;">
+            <div style="width: 44px; height: 44px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.2); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: var(--color-neon-cyan); flex-shrink: 0;">
+              <i class="fas fa-location-dot"></i>
+            </div>
+            <div>
+              <h4 style="margin-bottom: 0.25rem; font-family: var(--font-display);">Terminal Address</h4>
+              <p style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.5;">Manama Corporate District, Tower 4, Suite 802, Kingdom of Bahrain</p>
+            </div>
+          </li>
+          <li style="display: flex; gap: 1.25rem; align-items: flex-start;">
+            <div style="width: 44px; height: 44px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.2); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: var(--color-neon-cyan); flex-shrink: 0;">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <h4 style="margin-bottom: 0.25rem; font-family: var(--font-display);">Direct Telephone</h4>
+              <p style="color: var(--color-text-secondary); font-size: 0.95rem;">+973 1720 0450</p>
+            </div>
+          </li>
+          <li style="display: flex; gap: 1.25rem; align-items: flex-start;">
+            <div style="width: 44px; height: 44px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.2); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: var(--color-neon-cyan); flex-shrink: 0;">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4 style="margin-bottom: 0.25rem; font-family: var(--font-display);">System Email</h4>
+              <p style="color: var(--color-text-secondary); font-size: 0.95rem;">sys@captntrading.com</p>
+            </div>
+          </li>
+        </ul>
 
-        <div class="contact-card">
-          <div class="contact-icon-box"><i class="fas fa-envelope-open-text"></i></div>
-          <div class="contact-detail">
-            <h3>Electronic Mail</h3>
-            <p><a href="mailto:info@captntrading.com">info@captntrading.com</a></p>
-          </div>
-        </div>
-
-        <!-- Styled Map Placeholder -->
-        <div class="map-placeholder">
-          <i class="fas fa-location-dot"></i>
-          <h3 style="font-size: 1.1rem; color: var(--color-primary); margin-bottom: 0.25rem;">Interactive Map Location</h3>
-          <p style="font-size: 0.8rem; color: var(--color-text-light); text-align: center; max-width: 300px; margin-bottom: 1rem;">Manama Corporate District, Bahrain</p>
-          <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-secondary btn-sm" style="padding: 0.4rem 1rem; font-size: 0.8rem;">Open in Google Maps <i class="fas fa-arrow-up-right-from-square" style="font-size: 0.7rem;"></i></a>
+        <div class="glass-card" style="margin-top: 3rem; border-left: 4px solid var(--color-neon-cyan);">
+          <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-neon-cyan); margin-bottom: 0.5rem;">[REGISTRY_DATA]</div>
+          <p style="font-size: 0.9rem; line-height: 1.5; margin-bottom: 0; color: var(--color-text-secondary);">CAPTN TRADING is registered as a Commercial Entity with the Ministry of Industry and Commerce in the Kingdom of Bahrain. <strong>Commercial Registration Number (CR): 140234-1</strong>.</p>
         </div>
       </div>
 
-      <!-- Contact Form Column -->
-      <div class="contact-form-panel animate-on-scroll delay-100">
-        <div class="form-card">
-          <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--color-border); padding-bottom: 0.5rem; color: var(--color-primary);">Send a Message</h3>
-          
+      <!-- Contact Form Card -->
+      <div class="contact-form-wrapper animate-on-scroll delay-100">
+        <div class="glass-card glow-border-hover">
           <form id="contact-form" novalidate>
             <div class="form-group">
-              <label for="name">Full Name <span style="color: var(--color-primary-light);">*</span></label>
-              <input type="text" id="name" name="name" placeholder="John Doe" required aria-required="true">
+              <label for="name">Terminal Operator Name <span style="color: var(--color-neon-cyan);">*</span></label>
+              <input type="text" id="name" name="name" required placeholder="e.g., Jane Doe" style="background: rgba(255,255,255,0.02); color: var(--color-text-primary);">
             </div>
-            
             <div class="form-group">
-              <label for="company">Company / Organization</label>
-              <input type="text" id="company" name="company" placeholder="Example Corporation Ltd">
+              <label for="email">Connection Email Address <span style="color: var(--color-neon-cyan);">*</span></label>
+              <input type="email" id="email" name="email" required placeholder="e.g., operator@domain.com" style="background: rgba(255,255,255,0.02); color: var(--color-text-primary);">
             </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="email">Business Email <span style="color: var(--color-primary-light);">*</span></label>
-                <input type="email" id="email" name="email" placeholder="john@company.com" required aria-required="true">
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone Number <span style="color: var(--color-primary-light);">*</span></label>
-                <input type="tel" id="phone" name="phone" placeholder="+973 3333 4444" required aria-required="true">
-              </div>
-            </div>
-
             <div class="form-group">
-              <label for="message">Message / Inquiry Details <span style="color: var(--color-primary-light);">*</span></label>
-              <textarea id="message" name="message" placeholder="Please outline your specific trading, sourcing, or logistical needs..." required aria-required="true"></textarea>
+              <label for="subject">Request Subject <span style="color: var(--color-neon-cyan);">*</span></label>
+              <input type="text" id="subject" name="subject" required placeholder="e.g., Customs Filing Sync" style="background: rgba(255,255,255,0.02); color: var(--color-text-primary);">
             </div>
-
-            <button type="submit" class="btn btn-navy" style="width: 100%;" id="contact-submit-btn">Send Inquiry Message <i class="fas fa-paper-plane"></i></button>
+            <div class="form-group">
+              <label for="message">Detailed Sourcing Parameters <span style="color: var(--color-neon-cyan);">*</span></label>
+              <textarea id="message" name="message" rows="5" required placeholder="Describe your product specifications, volumes, and ports requirements..." style="background: rgba(255,255,255,0.02); color: var(--color-text-primary);"></textarea>
+            </div>
+            <button type="submit" class="btn btn-cyan btn-lg" style="width: 100%; justify-content: center; margin-top: 1rem;">
+              Transmit Parameters <i class="fas fa-paper-plane"></i>
+            </button>
           </form>
-
-          <!-- Hidden Success Confirmation Card (Triggered in main.js) -->
-          <div id="contact-success" class="form-success-message" style="display: none;">
-            <i class="fas fa-circle-check"></i>
-            <h3>Message Sent Successfully</h3>
-            <p>Thank you for contacting CAPTN TRADING. Your inquiry has been logged, and our commercial board will review and respond to your message within 24 business hours.</p>
-            <button class="btn btn-primary btn-sm" style="margin-top: 1.5rem;" onclick="location.reload()">Send Another Message</button>
+          
+          <div class="form-success-container" id="contact-success" style="display: none; text-align: center; padding: 3rem 1.5rem;">
+            <div style="font-size: 4rem; color: var(--color-neon-cyan); margin-bottom: 1.5rem; text-shadow: 0 0 15px rgba(0, 242, 254, 0.4);"><i class="fas fa-circle-check"></i></div>
+            <h2 style="font-size: 1.8rem; margin-bottom: 1rem;">Connection Active</h2>
+            <p style="color: var(--color-text-secondary); margin-bottom: 2rem;">Your parameters have been logged. Sourcing operators will initiate a WhatsApp secure link or call your node shortly.</p>
+            <button onclick="document.getElementById('contact-success').style.display='none'; document.getElementById('contact-form').style.display='block';" class="btn btn-glass">Open New Link <i class="fas fa-arrows-rotate"></i></button>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Map Section -->
+  <section class="section" id="contact-map-section" style="padding-top: 0;">
+    <div class="container animate-on-scroll">
+      <div class="glass-card" style="padding: 0; overflow: hidden; height: 400px; border: var(--border-glass);">
+        <!-- Interactive Google map iframe -->
+        <iframe 
+          title="CAPTN TRADING Head Office"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m13!1d14316.568469399238!2d50.58596632427845!3d26.228518974577884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49af67140e942b%3A0xe54e3d366373752e!2sManama%2C%20Bahrain!5e0!3m2!1sen!2sae!4v1717316024190!5m2!1sen!2sae" 
+          width="100%" 
+          height="100%" 
+          style="border:0; filter: invert(90%) hue-rotate(180deg) grayscale(1) contrast(1.2);" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </div>
   </section>
@@ -150,54 +177,53 @@
   <!-- Footer Section -->
   <footer id="main-footer">
     <div class="container footer-grid">
-      <!-- Col 1: Bio -->
+      <!-- Col 1 -->
       <div class="footer-col">
         <a href="index.html" class="logo" style="margin-bottom: 1.5rem;" id="footer-logo-link">
           <div class="logo-icon" style="width: 32px; height: 32px; font-size: 1rem;">C</div>
-          <span class="logo-text" style="font-size: 1.25rem;">CAPTN <span>TRADING</span></span>
+          <span class="logo-text" style="font-size: 1.25rem;">CAPTN <span>OS</span></span>
         </a>
-        <p style="margin-top: 1rem;">CAPTN TRADING is a premier commercial entity registered in the Kingdom of Bahrain. We connect global manufacturers with regional growth markets via robust shipping channels, rigorous product verification, and customer-first supply partnerships.</p>
+        <p style="margin-top: 1rem;">CAPTN TRADE OS is a premium global sourcing and digital logistics platform registered in the Kingdom of Bahrain. We optimize GCC supply chains via advanced cargo routing and quality assurance audits.</p>
         <div class="footer-socials">
-          <a href="#" class="social-icon" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="social-icon" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-icon" aria-label="Facebook Page"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-icon" aria-label="Instagram Page"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         </div>
       </div>
       
-      <!-- Col 2: Navigation Links -->
+      <!-- Col 2 -->
       <div class="footer-col">
-        <h3>Quick Links</h3>
+        <h3>Quick Access</h3>
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Our Services</a></li>
+          <li><a href="index.html">Home OS</a></li>
+          <li><a href="about.html">About OS</a></li>
+          <li><a href="services.html">App Modules</a></li>
           <li><a href="products.html">Product Catalog</a></li>
           <li><a href="industries.html">Sectors Served</a></li>
-          <li><a href="gallery.html">Media Gallery</a></li>
+          <li><a href="gallery.html">Visual Logs</a></li>
         </ul>
       </div>
 
-      <!-- Col 3: Services Links -->
+      <!-- Col 3 -->
       <div class="footer-col">
-        <h3>Trade Services</h3>
+        <h3>Trade Systems</h3>
         <ul class="footer-links">
-          <li><a href="services.html">General Trading</a></li>
-          <li><a href="services.html">Import & Export</a></li>
-          <li><a href="services.html">Wholesale Sourcing</a></li>
-          <li><a href="import-export.html">Logistics Network</a></li>
-          <li><a href="quote.html">Custom Quotes</a></li>
-          <li><a href="blog.html">Industry News</a></li>
+          <li><a href="services.html">Autonomous Trade</a></li>
+          <li><a href="services.html">Customs Clearance</a></li>
+          <li><a href="services.html">Bulk Sourcing</a></li>
+          <li><a href="import-export.html">Logistics Routing</a></li>
+          <li><a href="quote.html">Configure Request</a></li>
+          <li><a href="blog.html">Decrypted Briefs</a></li>
         </ul>
       </div>
 
-      <!-- Col 4: Contact & Newsletter -->
+      <!-- Col 4 -->
       <div class="footer-col">
-        <h3>Contact Us</h3>
+        <h3>Command Nodes</h3>
         <ul class="footer-contact">
           <li>
-            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-            <span>Manama Financial District, Tower 4, Suite 802, Kingdom of Bahrain</span>
+            <i class="fas fa-location-dot" aria-hidden="true"></i>
+            <span>Manama Corporate District, Tower 4, Suite 802, Kingdom of Bahrain</span>
           </li>
           <li>
             <i class="fas fa-phone" aria-hidden="true"></i>
@@ -205,15 +231,15 @@
           </li>
           <li>
             <i class="fas fa-envelope" aria-hidden="true"></i>
-            <span>info@captntrading.com</span>
+            <span>sys@captntrading.com</span>
           </li>
         </ul>
         
-        <h3 style="margin-top: 1.5rem; font-size: 1rem;">Newsletter Subscription</h3>
+        <h3 style="margin-top: 1.5rem; font-size: 0.95rem;">System Briefings</h3>
         <form class="newsletter-form" id="newsletter-subscription-form">
           <div class="newsletter-group">
-            <input type="email" placeholder="Your email address" aria-label="Newsletter email address" required id="newsletter-email-input">
-            <button type="submit" aria-label="Subscribe to newsletter" id="newsletter-submit-btn"><i class="fas fa-paper-plane"></i></button>
+            <input type="email" placeholder="Your terminal email" aria-label="Email" required id="newsletter-email-input">
+            <button type="submit" id="newsletter-submit-btn"><i class="fas fa-paper-plane"></i></button>
           </div>
         </form>
       </div>
@@ -221,21 +247,21 @@
 
     <!-- Footer Bottom -->
     <div class="container footer-bottom">
-      <p>&copy; 2026 CAPTN TRADING. All Rights Reserved. Commercial Registration No: 140234-1.</p>
+      <p>&copy; 2026 CAPTN TRADE OS. All Logs Protected. CR: 140234-1.</p>
       <div class="footer-bottom-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="contact.html">Sitemap</a>
+        <a href="#">Security Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="contact.html">Diagnostics</a>
       </div>
     </div>
   </footer>
 
-  <!-- Floating Widgets -->
-  <a href="https://wa.me/97317200450" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with CAPTN TRADING sales support on WhatsApp" id="whatsapp-floating-widget">
+  <!-- Floating HUD elements -->
+  <a href="https://wa.me/97317200450" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Node Link" id="whatsapp-floating-widget">
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <button class="back-to-top" aria-label="Scroll back to top of the page" id="back-to-top-widget">
+  <button class="back-to-top" aria-label="Reset position" id="back-to-top-widget">
     <i class="fas fa-arrow-up"></i>
   </button>
 

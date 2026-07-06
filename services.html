@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore our core services: general trading, import/export compliance, wholesale distribution, global product sourcing, and procurement solutions based in Bahrain.">
-  <title>Our Services | CAPTN TRADING | Sourcing & Logistics Solutions</title>
+  <meta name="description" content="Explore our modular trade services: autonomous trading, customs routing pipelines, predictive global sourcing, and enterprise distribution OS in Bahrain.">
+  <title>App Modules | CAPTN TRADING | Trade OS Services</title>
   <!-- Google Fonts & FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -12,26 +12,46 @@
 </head>
 <body>
 
-  <!-- Header Section -->
+  <!-- Futuristic Boot Loader -->
+  <div id="boot-loader" aria-hidden="true">
+    <div class="boot-terminal">
+      <div class="boot-header">
+        <span class="boot-dot red"></span>
+        <span class="boot-dot yellow"></span>
+        <span class="boot-dot green"></span>
+      </div>
+      <div class="boot-log" id="boot-log"></div>
+    </div>
+    <div class="boot-progress-container" style="max-width: 750px;">
+      <div class="boot-progress-bar"></div>
+    </div>
+  </div>
+
+  <!-- Background Overlays -->
+  <canvas id="matrix-canvas"></canvas>
+  <div class="cyber-grid"></div>
+  <div class="mouse-glow"></div>
+
+  <!-- Header Section (Glass HUD Navbar) -->
   <header id="main-header">
     <div class="container nav-container">
       <a href="index.html" class="logo" id="header-logo-link">
         <div class="logo-icon">C</div>
-        <span class="logo-text">CAPTN <span>TRADING</span></span>
+        <span class="logo-text">CAPTN <span>OS</span></span>
       </a>
       
       <nav aria-label="Main Navigation">
         <ul class="nav-menu" id="primary-nav-menu">
           <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About Us</a></li>
-          <li><a href="services.html" class="nav-link active">Services</a></li>
-          <li><a href="products.html" class="nav-link">Products</a></li>
-          <li><a href="industries.html" class="nav-link">Industries</a></li>
-          <li><a href="import-export.html" class="nav-link">Import & Export</a></li>
-          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-          <li><a href="blog.html" class="nav-link">News</a></li>
-          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
-          <li class="nav-cta"><a href="quote.html" class="btn btn-primary btn-sm" id="nav-cta-quote-btn">Get a Quote</a></li>
+          <li><a href="about.html" class="nav-link">About OS</a></li>
+          <li><a href="services.html" class="nav-link active">Modules</a></li>
+          <li><a href="products.html" class="nav-link">Catalog</a></li>
+          <li><a href="industries.html" class="nav-link">Sectors</a></li>
+          <li><a href="import-export.html" class="nav-link">Routing</a></li>
+          <li><a href="gallery.html" class="nav-link">Logs</a></li>
+          <li><a href="blog.html" class="nav-link">Briefs</a></li>
+          <li><a href="contact.html" class="nav-link">Terminal</a></li>
+          <li class="nav-cta"><a href="quote.html" class="btn btn-cyan btn-sm" id="nav-cta-quote-btn" style="padding: 0.6rem 1.25rem;">Deploy Core</a></li>
         </ul>
       </nav>
       
@@ -46,11 +66,11 @@
   <!-- Page Hero Header -->
   <section class="page-hero" id="services-page-hero">
     <div class="container">
-      <h1>Our Services</h1>
+      <h1>Core OS Modules</h1>
       <nav class="breadcrumbs" aria-label="breadcrumb">
-        <a href="index.html">Home</a>
-        <i class="fas fa-chevron-right" style="font-size: 0.75rem; align-self: center;"></i>
-        <span>Services</span>
+        <a href="index.html">Home OS</a>
+        <i class="fas fa-chevron-right" style="font-size: 0.75rem; align-self: center; color: var(--color-neon-cyan);"></i>
+        <span>Modules</span>
       </nav>
     </div>
   </section>
@@ -59,120 +79,120 @@
   <section class="section" id="services-grid-section">
     <div class="container">
       <div class="section-header animate-on-scroll">
-        <span class="subtitle">Global Trading Services</span>
-        <h2>End-to-End Trade Management</h2>
-        <p>From sourcing the finest global products to coordinating complex cargo shipments, CAPTN TRADING is equipped to serve as your single point of supply chain contact.</p>
+        <span class="hud-tag">SYSTEM ARCHITECTURE</span>
+        <h2>End-to-End Sourcing Modules</h2>
+        <p>Deploy our integrated general trading apps to handle sourcing compliance, bulk warehousing, and GCC custom logistics.</p>
       </div>
 
       <div class="grid-3 animate-on-scroll delay-100">
         <!-- Service 1 -->
         <div class="service-card">
           <div class="service-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=600&q=80" alt="General Trading">
+            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=600&q=80" alt="Autonomous Trade Core">
             <div class="service-overlay"></div>
-            <div class="service-icon-badge"><i class="fas fa-briefcase"></i></div>
+            <div class="service-icon-badge"><i class="fas fa-robot"></i></div>
           </div>
           <div class="service-body">
-            <h3>General Trading</h3>
-            <p>Our general trading license allows us to act as a highly flexible import entity. We purchase, warehouse, and sell a vast range of commercial commodities, consumer brands, and technical equipment, adapting quickly to shifting market demands.</p>
-            <a href="quote.html?category=fmcg" class="service-link">Inquire Online <span><i class="fas fa-chevron-right"></i></span></a>
+            <h3>Autonomous Trade Core</h3>
+            <p>Our core trading engine. We purchase, hold, and broker bulk goods across multiple global industrial pipelines, guaranteeing stable buffer stocks for regional GCC networks.</p>
+            <a href="quote.html?category=fmcg" class="service-link">Inquire Module <span><i class="fas fa-chevron-right"></i></span></a>
           </div>
         </div>
 
         <!-- Service 2 -->
         <div class="service-card">
           <div class="service-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=600&q=80" alt="Import & Export">
+            <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=600&q=80" alt="Customs Routing">
             <div class="service-overlay"></div>
-            <div class="service-icon-badge"><i class="fas fa-globe"></i></div>
+            <div class="service-icon-badge"><i class="fas fa-passport"></i></div>
           </div>
           <div class="service-body">
-            <h3>Import & Export</h3>
-            <p>We manage all import/export protocols, including custom duties, HS code classification, and regulatory compliance. Our team in Bahrain coordinates ocean freight, air cargo, and land customs transit, ensuring zero demurrage charges.</p>
-            <a href="import-export.html" class="service-link">View Routes <span><i class="fas fa-chevron-right"></i></span></a>
+            <h3>Customs Clearance Routing</h3>
+            <p>Managing custom compliance, tariff classifications, and GCC port pre-entry filings. We pre-clear cargo via digital systems, avoiding any container demurrage delays.</p>
+            <a href="import-export.html" class="service-link">Verify Pipeline <span><i class="fas fa-chevron-right"></i></span></a>
           </div>
         </div>
 
         <!-- Service 3 -->
         <div class="service-card">
           <div class="service-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80" alt="Wholesale Distribution">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80" alt="Distribution OS">
             <div class="service-overlay"></div>
             <div class="service-icon-badge"><i class="fas fa-boxes-packing"></i></div>
           </div>
           <div class="service-body">
-            <h3>Wholesale Distribution</h3>
-            <p>Operating spacious holding facilities in Bahrain, we distribute bulk products directly to sub-distributors, regional wholesalers, and industrial buyers. We maintain consistent stock buffers of highly demanded consumables and building supplies.</p>
-            <a href="quote.html?category=wholesale" class="service-link">Bulk Inquiries <span><i class="fas fa-chevron-right"></i></span></a>
+            <h3>Distribution OS</h3>
+            <p>Operating spacious holding facilities in Bahrain, we distribute bulk products directly to sub-distributors, regional wholesalers, and industrial buyers with automated dispatch logs.</p>
+            <a href="quote.html?category=logistics" class="service-link">Inquire Module <span><i class="fas fa-chevron-right"></i></span></a>
           </div>
         </div>
 
         <!-- Service 4 -->
         <div class="service-card">
           <div class="service-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80" alt="Retail Supply">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80" alt="Replenishment API">
             <div class="service-overlay"></div>
             <div class="service-icon-badge"><i class="fas fa-store"></i></div>
           </div>
           <div class="service-body">
-            <h3>Retail Supply</h3>
-            <p>We keep supermarket networks, pharmacies, and department store chains continuously supplied. By establishing scheduled replenishment channels, we guarantee retail shelf availability of essential household FMCG and electronics.</p>
-            <a href="products.html" class="service-link">View Product List <span><i class="fas fa-chevron-right"></i></span></a>
+            <h3>Replenishment API</h3>
+            <p>We keep supermarket networks, pharmacies, and department store chains continuously supplied. By establishing scheduled replenishment channels, we guarantee retail shelf availability.</p>
+            <a href="products.html" class="service-link">View Catalog <span><i class="fas fa-chevron-right"></i></span></a>
           </div>
         </div>
 
         <!-- Service 5 -->
         <div class="service-card">
           <div class="service-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Product Sourcing">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Sourcing Engine">
             <div class="service-overlay"></div>
-            <div class="service-icon-badge"><i class="fas fa-magnifying-glass"></i></div>
+            <div class="service-icon-badge"><i class="fas fa-arrows-spin"></i></div>
           </div>
           <div class="service-body">
-            <h3>Product Sourcing</h3>
-            <p>Struggling to find reliable factories? Our specialized global sourcing team audits manufacturing plants, negotiates rates directly, verifies certificates, and ensures compliance with Bahrain and GCC import standards.</p>
-            <a href="quote.html" class="service-link">Start Sourcing <span><i class="fas fa-chevron-right"></i></span></a>
+            <h3>Sourcing Engine</h3>
+            <p>Struggling to find reliable factories? Our specialized global sourcing team audits manufacturing plants, negotiates rates directly, and verifies conformity certificates.</p>
+            <a href="quote.html" class="service-link">Launch Sourcing <span><i class="fas fa-chevron-right"></i></span></a>
           </div>
         </div>
 
         <!-- Service 6 -->
         <div class="service-card">
           <div class="service-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" alt="Procurement Solutions">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" alt="Enterprise Procurement">
             <div class="service-overlay"></div>
             <div class="service-icon-badge"><i class="fas fa-list-check"></i></div>
           </div>
           <div class="service-body">
-            <h3>Procurement Solutions</h3>
-            <p>We partner with corporate procurement departments and government entities to handle complex, large-scale purchase tenders. We manage the tender process, factory contracting, logistical delivery, and quality assurance inspections.</p>
-            <a href="contact.html" class="service-link">Corporate Support <span><i class="fas fa-chevron-right"></i></span></a>
+            <h3>Enterprise Procurement</h3>
+            <p>We partner with corporate procurement departments and government entities to handle complex, large-scale purchase tenders, managing the factory contracting and quality audits.</p>
+            <a href="contact.html" class="service-link">Connect Console <span><i class="fas fa-chevron-right"></i></span></a>
           </div>
         </div>
 
         <!-- Service 7 -->
         <div class="service-card">
           <div class="service-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1542744094-3a31f103e35f?auto=format&fit=crop&w=600&q=80" alt="Logistics Coordination">
+            <img src="https://images.unsplash.com/photo-1542744094-3a31f103e35f?auto=format&fit=crop&w=600&q=80" alt="Logistics Ledger">
             <div class="service-overlay"></div>
             <div class="service-icon-badge"><i class="fas fa-truck-ramp-box"></i></div>
           </div>
           <div class="service-body">
-            <h3>Logistics Coordination</h3>
-            <p>We integrate marine, air, and highway cargo networks. We consolidate LCL (less-than-container-load) shipments to cut transport costs and manage cold-chain logistics for temperature-sensitive food and healthcare products.</p>
-            <a href="import-export.html" class="service-link">View Details <span><i class="fas fa-chevron-right"></i></span></a>
+            <h3>Logistics Ledger</h3>
+            <p>We integrate marine, air, and highway cargo networks. We consolidate LCL (less-than-container-load) shipments to cut transport costs and manage cold-chain logistics.</p>
+            <a href="import-export.html" class="service-link">Verify Pipeline <span><i class="fas fa-chevron-right"></i></span></a>
           </div>
         </div>
 
         <!-- Service 8 -->
         <div class="service-card">
           <div class="service-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80" alt="Business Partnerships">
+            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80" alt="Agency API">
             <div class="service-overlay"></div>
             <div class="service-icon-badge"><i class="fas fa-handshake"></i></div>
           </div>
           <div class="service-body">
-            <h3>Business Partnerships</h3>
-            <p>We represent international brands wishing to enter GCC markets. CAPTN TRADING offers exclusive agency services, operating as your legal local branch, handling sales, marketing, warehousing, and wholesale supply channels.</p>
+            <h3>Agency API</h3>
+            <p>We represent international brands wishing to enter GCC markets, operating as your legal local branch, handling sales, marketing, warehousing, and wholesale supply channels.</p>
             <a href="contact.html" class="service-link">Partner with Us <span><i class="fas fa-chevron-right"></i></span></a>
           </div>
         </div>
@@ -181,13 +201,13 @@
   </section>
 
   <!-- CTA Banner Section -->
-  <section class="section section-bg-navy" style="background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary-light) 100%); text-align: center; border-bottom: 5px solid var(--color-gold);" id="services-cta-banner-section">
+  <section class="section" style="background: radial-gradient(circle at 50% 50%, rgba(157, 80, 187, 0.1), transparent); text-align: center; border-top: var(--border-glass); border-bottom: 5px solid var(--color-neon-cyan);" id="services-cta-banner-section">
     <div class="container animate-on-scroll">
-      <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Have a Specific Procurement Need?</h2>
-      <p style="font-size: 1.15rem; max-width: 700px; margin: 0 auto 2.5rem auto; color: rgba(255,255,255,0.85);">Let our trade specialists design a custom sourcing, pricing, and distribution framework for your business.</p>
+      <h2 style="font-size: 2.75rem; margin-bottom: 1rem;">Have a Custom Logistics Parameter?</h2>
+      <p style="font-size: 1.15rem; max-width: 700px; margin: 0 auto 3rem auto; color: var(--color-text-secondary);">Let our trade engineers configure a custom sourcing, pricing, and distribution framework for your business.</p>
       <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-        <a href="quote.html" class="btn btn-primary btn-lg" id="services-banner-quote-btn">Request a Customized Quote <i class="fas fa-file-signature"></i></a>
-        <a href="contact.html" class="btn btn-secondary btn-lg" id="services-banner-contact-btn">Speak With an Expert <i class="fas fa-phone"></i></a>
+        <a href="quote.html" class="btn btn-cyan btn-lg" id="services-banner-quote-btn">Configure OS Request <i class="fas fa-terminal"></i></a>
+        <a href="contact.html" class="btn btn-glass btn-lg" id="services-banner-contact-btn">Speak to Sourcing Desk <i class="fas fa-headset"></i></a>
       </div>
     </div>
   </section>
@@ -195,54 +215,53 @@
   <!-- Footer Section -->
   <footer id="main-footer">
     <div class="container footer-grid">
-      <!-- Col 1: Bio -->
+      <!-- Col 1 -->
       <div class="footer-col">
         <a href="index.html" class="logo" style="margin-bottom: 1.5rem;" id="footer-logo-link">
           <div class="logo-icon" style="width: 32px; height: 32px; font-size: 1rem;">C</div>
-          <span class="logo-text" style="font-size: 1.25rem;">CAPTN <span>TRADING</span></span>
+          <span class="logo-text" style="font-size: 1.25rem;">CAPTN <span>OS</span></span>
         </a>
-        <p style="margin-top: 1rem;">CAPTN TRADING is a premier commercial entity registered in the Kingdom of Bahrain. We connect global manufacturers with regional growth markets via robust shipping channels, rigorous product verification, and customer-first supply partnerships.</p>
+        <p style="margin-top: 1rem;">CAPTN TRADE OS is a premium global sourcing and digital logistics platform registered in the Kingdom of Bahrain. We optimize GCC supply chains via advanced cargo routing and quality assurance audits.</p>
         <div class="footer-socials">
-          <a href="#" class="social-icon" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="social-icon" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-icon" aria-label="Facebook Page"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-icon" aria-label="Instagram Page"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         </div>
       </div>
       
-      <!-- Col 2: Navigation Links -->
+      <!-- Col 2 -->
       <div class="footer-col">
-        <h3>Quick Links</h3>
+        <h3>Quick Access</h3>
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Our Services</a></li>
+          <li><a href="index.html">Home OS</a></li>
+          <li><a href="about.html">About OS</a></li>
+          <li><a href="services.html">App Modules</a></li>
           <li><a href="products.html">Product Catalog</a></li>
           <li><a href="industries.html">Sectors Served</a></li>
-          <li><a href="gallery.html">Media Gallery</a></li>
+          <li><a href="gallery.html">Visual Logs</a></li>
         </ul>
       </div>
 
-      <!-- Col 3: Services Links -->
+      <!-- Col 3 -->
       <div class="footer-col">
-        <h3>Trade Services</h3>
+        <h3>Trade Systems</h3>
         <ul class="footer-links">
-          <li><a href="services.html">General Trading</a></li>
-          <li><a href="services.html">Import & Export</a></li>
-          <li><a href="services.html">Wholesale Sourcing</a></li>
-          <li><a href="import-export.html">Logistics Network</a></li>
-          <li><a href="quote.html">Custom Quotes</a></li>
-          <li><a href="blog.html">Industry News</a></li>
+          <li><a href="services.html">Autonomous Trade</a></li>
+          <li><a href="services.html">Customs Clearance</a></li>
+          <li><a href="services.html">Bulk Sourcing</a></li>
+          <li><a href="import-export.html">Logistics Routing</a></li>
+          <li><a href="quote.html">Configure Request</a></li>
+          <li><a href="blog.html">Decrypted Briefs</a></li>
         </ul>
       </div>
 
-      <!-- Col 4: Contact & Newsletter -->
+      <!-- Col 4 -->
       <div class="footer-col">
-        <h3>Contact Us</h3>
+        <h3>Command Nodes</h3>
         <ul class="footer-contact">
           <li>
-            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-            <span>Manama Financial District, Tower 4, Suite 802, Kingdom of Bahrain</span>
+            <i class="fas fa-location-dot" aria-hidden="true"></i>
+            <span>Manama Corporate District, Tower 4, Suite 802, Kingdom of Bahrain</span>
           </li>
           <li>
             <i class="fas fa-phone" aria-hidden="true"></i>
@@ -250,15 +269,15 @@
           </li>
           <li>
             <i class="fas fa-envelope" aria-hidden="true"></i>
-            <span>info@captntrading.com</span>
+            <span>sys@captntrading.com</span>
           </li>
         </ul>
         
-        <h3 style="margin-top: 1.5rem; font-size: 1rem;">Newsletter Subscription</h3>
+        <h3 style="margin-top: 1.5rem; font-size: 0.95rem;">System Briefings</h3>
         <form class="newsletter-form" id="newsletter-subscription-form">
           <div class="newsletter-group">
-            <input type="email" placeholder="Your email address" aria-label="Newsletter email address" required id="newsletter-email-input">
-            <button type="submit" aria-label="Subscribe to newsletter" id="newsletter-submit-btn"><i class="fas fa-paper-plane"></i></button>
+            <input type="email" placeholder="Your terminal email" aria-label="Email" required id="newsletter-email-input">
+            <button type="submit" id="newsletter-submit-btn"><i class="fas fa-paper-plane"></i></button>
           </div>
         </form>
       </div>
@@ -266,21 +285,21 @@
 
     <!-- Footer Bottom -->
     <div class="container footer-bottom">
-      <p>&copy; 2026 CAPTN TRADING. All Rights Reserved. Commercial Registration No: 140234-1.</p>
+      <p>&copy; 2026 CAPTN TRADE OS. All Logs Protected. CR: 140234-1.</p>
       <div class="footer-bottom-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="contact.html">Sitemap</a>
+        <a href="#">Security Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="contact.html">Diagnostics</a>
       </div>
     </div>
   </footer>
 
-  <!-- Floating Widgets -->
-  <a href="https://wa.me/97317200450" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with CAPTN TRADING sales support on WhatsApp" id="whatsapp-floating-widget">
+  <!-- Floating HUD elements -->
+  <a href="https://wa.me/97317200450" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Node Link" id="whatsapp-floating-widget">
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <button class="back-to-top" aria-label="Scroll back to top of the page" id="back-to-top-widget">
+  <button class="back-to-top" aria-label="Reset position" id="back-to-top-widget">
     <i class="fas fa-arrow-up"></i>
   </button>
 

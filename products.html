@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Browse CAPTN TRADING's high-quality product catalog: FMCG, food and beverage, steel, construction materials, electronics, and industrial safety tools.">
-  <title>Product Catalog | CAPTN TRADING | Quality Sourced Products</title>
+  <meta name="description" content="Browse CAPTN TRADE OS database catalog: FMCG food grains, construction deformed steel rebars, microprocessors, and hotel linens.">
+  <title>Product Catalog | CAPTN TRADING | Verified Sourced Goods</title>
   <!-- Google Fonts & FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -12,26 +12,46 @@
 </head>
 <body>
 
-  <!-- Header Section -->
+  <!-- Futuristic Boot Loader -->
+  <div id="boot-loader" aria-hidden="true">
+    <div class="boot-terminal">
+      <div class="boot-header">
+        <span class="boot-dot red"></span>
+        <span class="boot-dot yellow"></span>
+        <span class="boot-dot green"></span>
+      </div>
+      <div class="boot-log" id="boot-log"></div>
+    </div>
+    <div class="boot-progress-container" style="max-width: 750px;">
+      <div class="boot-progress-bar"></div>
+    </div>
+  </div>
+
+  <!-- Background Overlays -->
+  <canvas id="matrix-canvas"></canvas>
+  <div class="cyber-grid"></div>
+  <div class="mouse-glow"></div>
+
+  <!-- Header Section (Glass HUD Navbar) -->
   <header id="main-header">
     <div class="container nav-container">
       <a href="index.html" class="logo" id="header-logo-link">
         <div class="logo-icon">C</div>
-        <span class="logo-text">CAPTN <span>TRADING</span></span>
+        <span class="logo-text">CAPTN <span>OS</span></span>
       </a>
       
       <nav aria-label="Main Navigation">
         <ul class="nav-menu" id="primary-nav-menu">
           <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About Us</a></li>
-          <li><a href="services.html" class="nav-link">Services</a></li>
-          <li><a href="products.html" class="nav-link active">Products</a></li>
-          <li><a href="industries.html" class="nav-link">Industries</a></li>
-          <li><a href="import-export.html" class="nav-link">Import & Export</a></li>
-          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-          <li><a href="blog.html" class="nav-link">News</a></li>
-          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
-          <li class="nav-cta"><a href="quote.html" class="btn btn-primary btn-sm" id="nav-cta-quote-btn">Get a Quote</a></li>
+          <li><a href="about.html" class="nav-link">About OS</a></li>
+          <li><a href="services.html" class="nav-link">Modules</a></li>
+          <li><a href="products.html" class="nav-link active">Catalog</a></li>
+          <li><a href="industries.html" class="nav-link">Sectors</a></li>
+          <li><a href="import-export.html" class="nav-link">Routing</a></li>
+          <li><a href="gallery.html" class="nav-link">Logs</a></li>
+          <li><a href="blog.html" class="nav-link">Briefs</a></li>
+          <li><a href="contact.html" class="nav-link">Terminal</a></li>
+          <li class="nav-cta"><a href="quote.html" class="btn btn-cyan btn-sm" id="nav-cta-quote-btn" style="padding: 0.6rem 1.25rem;">Deploy Core</a></li>
         </ul>
       </nav>
       
@@ -46,11 +66,11 @@
   <!-- Page Hero Header -->
   <section class="page-hero" id="products-page-hero">
     <div class="container">
-      <h1>Product Catalog</h1>
+      <h1>Inventory Database</h1>
       <nav class="breadcrumbs" aria-label="breadcrumb">
-        <a href="index.html">Home</a>
-        <i class="fas fa-chevron-right" style="font-size: 0.75rem; align-self: center;"></i>
-        <span>Products</span>
+        <a href="index.html">Home OS</a>
+        <i class="fas fa-chevron-right" style="font-size: 0.75rem; align-self: center; color: var(--color-neon-cyan);"></i>
+        <span>Catalog</span>
       </nav>
     </div>
   </section>
@@ -59,14 +79,14 @@
   <section class="section" id="products-catalog-section">
     <div class="container">
       <div class="section-header animate-on-scroll">
-        <span class="subtitle">Global Portfolio</span>
-        <h2>High-Quality Sourced Goods</h2>
-        <p>Browse our catalog of highly-demanded industrial and consumer products. We source exclusively from certified manufacturing entities worldwide, handling compliance and freight logistics directly.</p>
+        <span class="hud-tag">OPERATIONAL PARAMETERS</span>
+        <h2>Verified Sourced Inventories</h2>
+        <p>Browse our catalog of verified materials and components. Select any card to send pre-filled specifications to our sourcing board.</p>
       </div>
 
-      <!-- JavaScript Catalog Filtering Button Row -->
+      <!-- Tab Filters -->
       <div class="catalog-filters animate-on-scroll">
-        <button class="filter-btn active" data-filter="all">All Products</button>
+        <button class="filter-btn active" data-filter="all">All Logs</button>
         <button class="filter-btn" data-filter="fmcg">FMCG & Food</button>
         <button class="filter-btn" data-filter="construction">Construction Materials</button>
         <button class="filter-btn" data-filter="industrial">Industrial Products</button>
@@ -86,7 +106,7 @@
             <h3>Premium Basmati Rice</h3>
             <p>Grade-A long-grain Basmati rice sourced directly from fields in Northern India. Sorted, polished, and packaged in moisture-resistant bulk bags (20kg, 50kg) for wholesale retail networks.</p>
             <div class="product-action">
-              <a href="quote.html?category=fmcg" class="btn btn-navy btn-sm" style="width: 100%;">Inquire Product <i class="fas fa-paper-plane"></i></a>
+              <a href="quote.html?category=fmcg" class="btn btn-cyan btn-sm" style="width: 100%;">Inquire Product <i class="fas fa-paper-plane"></i></a>
             </div>
           </div>
         </div>
@@ -101,7 +121,7 @@
             <h3>Pure Cooking Oils</h3>
             <p>100% refined cooking oils (Sunflower, Corn, Palm Oil) with high smoke-points. Available in consumer PET bottles (1.5L, 5L) or bulk metal drums (18L) matching Gulf food standard regulatory limits.</p>
             <div class="product-action">
-              <a href="quote.html?category=fmcg" class="btn btn-navy btn-sm" style="width: 100%;">Inquire Product <i class="fas fa-paper-plane"></i></a>
+              <a href="quote.html?category=fmcg" class="btn btn-cyan btn-sm" style="width: 100%;">Inquire Product <i class="fas fa-paper-plane"></i></a>
             </div>
           </div>
         </div>
@@ -116,7 +136,7 @@
             <h3>Deformed Steel Rebars</h3>
             <p>ASTM A615 Grade 60 hot-rolled steel deformed reinforcing bars (rebars). Perfect for high-strength reinforced concrete foundations. Supplied in standard sizes (8mm to 32mm) with test certification.</p>
             <div class="product-action">
-              <a href="quote.html?category=construction" class="btn btn-navy btn-sm" style="width: 100%;">Inquire Product <i class="fas fa-paper-plane"></i></a>
+              <a href="quote.html?category=construction" class="btn btn-cyan btn-sm" style="width: 100%;">Inquire Product <i class="fas fa-paper-plane"></i></a>
             </div>
           </div>
         </div>
@@ -131,7 +151,7 @@
             <h3>Portland Cement CEM I</h3>
             <p>High-strength Ordinary Portland Cement (OPC Grade 42.5/52.5) matching EN-197 specs. Sourced from certified factories with low alkali properties. Delivered in bulk vessels or 50kg paper sacks.</p>
             <div class="product-action">
-              <a href="quote.html?category=construction" class="btn btn-navy btn-sm" style="width: 100%;">Inquire Product <i class="fas fa-paper-plane"></i></a>
+              <a href="quote.html?category=construction" class="btn btn-cyan btn-sm" style="width: 100%;">Inquire Product <i class="fas fa-paper-plane"></i></a>
             </div>
           </div>
         </div>
@@ -146,7 +166,7 @@
             <h3>High-Pressure Gate Valves</h3>
             <p>API 6D certified cast steel and forged gate/ball valves for industrial water lines, HVAC installations, and petrochemical pipelines. Excellent resistance to corrosion and pressure spikes.</p>
             <div class="product-action">
-              <a href="quote.html?category=industrial" class="btn btn-navy btn-sm" style="width: 100%;">Inquire Product <i class="fas fa-paper-plane"></i></a>
+              <a href="quote.html?category=industrial" class="btn btn-cyan btn-sm" style="width: 100%;">Inquire Product <i class="fas fa-paper-plane"></i></a>
             </div>
           </div>
         </div>
@@ -161,7 +181,7 @@
             <h3>Industrial Safety PPE Kit</h3>
             <p>Comprehensive workplace safety gear. Includes ANSI Z87.1 protective glasses, EN397 safety helmets, high-visibility reflective vests, and cut-resistant nitrile-coated handling gloves.</p>
             <div class="product-action">
-              <a href="quote.html?category=industrial" class="btn btn-navy btn-sm" style="width: 100%;">Inquire Product <i class="fas fa-paper-plane"></i></a>
+              <a href="quote.html?category=industrial" class="btn btn-cyan btn-sm" style="width: 100%;">Inquire Product <i class="fas fa-paper-plane"></i></a>
             </div>
           </div>
         </div>
@@ -176,7 +196,7 @@
             <h3>Microcontrollers & PCBs</h3>
             <p>Bulk supply of integrated microcontrollers, electronic relays, resistors, and custom printed circuit board (PCB) assemblies. Sourced from high-precision electronic zones in East Asia.</p>
             <div class="product-action">
-              <a href="quote.html?category=electronics" class="btn btn-navy btn-sm" style="width: 100%;">Inquire Product <i class="fas fa-paper-plane"></i></a>
+              <a href="quote.html?category=electronics" class="btn btn-cyan btn-sm" style="width: 100%;">Inquire Product <i class="fas fa-paper-plane"></i></a>
             </div>
           </div>
         </div>
@@ -191,7 +211,7 @@
             <h3>Luxury Hotel Bed Linens</h3>
             <p>100% Egyptian cotton, 300+ thread count sheets, duvet covers, pillowcases, and heavy-weight terry towels. Pre-treated for high-cycle industrial laundering. Tailored for premium hospitality.</p>
             <div class="product-action">
-              <a href="quote.html?category=hospitality" class="btn btn-navy btn-sm" style="width: 100%;">Inquire Product <i class="fas fa-paper-plane"></i></a>
+              <a href="quote.html?category=hospitality" class="btn btn-cyan btn-sm" style="width: 100%;">Inquire Product <i class="fas fa-paper-plane"></i></a>
             </div>
           </div>
         </div>
@@ -200,13 +220,13 @@
   </section>
 
   <!-- CTA Banner Section -->
-  <section class="section section-bg-navy" style="background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary-light) 100%); text-align: center; border-bottom: 5px solid var(--color-gold);" id="products-cta-banner-section">
+  <section class="section" style="background: radial-gradient(circle at 50% 50%, rgba(0, 242, 254, 0.08), transparent); text-align: center; border-bottom: 5px solid var(--color-neon-cyan);" id="products-cta-banner-section">
     <div class="container animate-on-scroll">
-      <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Need a Product Not Listed in Our Catalog?</h2>
-      <p style="font-size: 1.15rem; max-width: 700px; margin: 0 auto 2.5rem auto; color: rgba(255,255,255,0.85);">We specialize in bespoke sourcing. Provide us with your technical specifications, blueprints, or sample sheets, and we will locate it.</p>
+      <h2 style="font-size: 2.75rem; margin-bottom: 1rem;">Need a Custom Sourced Component?</h2>
+      <p style="font-size: 1.15rem; max-width: 700px; margin: 0 auto 3rem auto; color: var(--color-text-secondary);">Send us your blueprints, material grade requirements, or target packaging options and we will build a secure factory corridor.</p>
       <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-        <a href="quote.html" class="btn btn-primary btn-lg" id="products-banner-quote-btn">Request a Customized Quote <i class="fas fa-file-signature"></i></a>
-        <a href="contact.html" class="btn btn-secondary btn-lg" id="products-banner-contact-btn">Sourcing Assistance <i class="fas fa-phone"></i></a>
+        <a href="quote.html" class="btn btn-cyan btn-lg" id="products-banner-quote-btn">Configure OS Request <i class="fas fa-terminal"></i></a>
+        <a href="contact.html" class="btn btn-glass btn-lg" id="products-banner-contact-btn">Speak to Sourcing Desk <i class="fas fa-headset"></i></a>
       </div>
     </div>
   </section>
@@ -214,54 +234,53 @@
   <!-- Footer Section -->
   <footer id="main-footer">
     <div class="container footer-grid">
-      <!-- Col 1: Bio -->
+      <!-- Col 1 -->
       <div class="footer-col">
         <a href="index.html" class="logo" style="margin-bottom: 1.5rem;" id="footer-logo-link">
           <div class="logo-icon" style="width: 32px; height: 32px; font-size: 1rem;">C</div>
-          <span class="logo-text" style="font-size: 1.25rem;">CAPTN <span>TRADING</span></span>
+          <span class="logo-text" style="font-size: 1.25rem;">CAPTN <span>OS</span></span>
         </a>
-        <p style="margin-top: 1rem;">CAPTN TRADING is a premier commercial entity registered in the Kingdom of Bahrain. We connect global manufacturers with regional growth markets via robust shipping channels, rigorous product verification, and customer-first supply partnerships.</p>
+        <p style="margin-top: 1rem;">CAPTN TRADE OS is a premium global sourcing and digital logistics platform registered in the Kingdom of Bahrain. We optimize GCC supply chains via advanced cargo routing and quality assurance audits.</p>
         <div class="footer-socials">
-          <a href="#" class="social-icon" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="social-icon" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-icon" aria-label="Facebook Page"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-icon" aria-label="Instagram Page"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         </div>
       </div>
       
-      <!-- Col 2: Navigation Links -->
+      <!-- Col 2 -->
       <div class="footer-col">
-        <h3>Quick Links</h3>
+        <h3>Quick Access</h3>
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Our Services</a></li>
+          <li><a href="index.html">Home OS</a></li>
+          <li><a href="about.html">About OS</a></li>
+          <li><a href="services.html">App Modules</a></li>
           <li><a href="products.html">Product Catalog</a></li>
           <li><a href="industries.html">Sectors Served</a></li>
-          <li><a href="gallery.html">Media Gallery</a></li>
+          <li><a href="gallery.html">Visual Logs</a></li>
         </ul>
       </div>
 
-      <!-- Col 3: Services Links -->
+      <!-- Col 3 -->
       <div class="footer-col">
-        <h3>Trade Services</h3>
+        <h3>Trade Systems</h3>
         <ul class="footer-links">
-          <li><a href="services.html">General Trading</a></li>
-          <li><a href="services.html">Import & Export</a></li>
-          <li><a href="services.html">Wholesale Sourcing</a></li>
-          <li><a href="import-export.html">Logistics Network</a></li>
-          <li><a href="quote.html">Custom Quotes</a></li>
-          <li><a href="blog.html">Industry News</a></li>
+          <li><a href="services.html">Autonomous Trade</a></li>
+          <li><a href="services.html">Customs Clearance</a></li>
+          <li><a href="services.html">Bulk Sourcing</a></li>
+          <li><a href="import-export.html">Logistics Routing</a></li>
+          <li><a href="quote.html">Configure Request</a></li>
+          <li><a href="blog.html">Decrypted Briefs</a></li>
         </ul>
       </div>
 
-      <!-- Col 4: Contact & Newsletter -->
+      <!-- Col 4 -->
       <div class="footer-col">
-        <h3>Contact Us</h3>
+        <h3>Command Nodes</h3>
         <ul class="footer-contact">
           <li>
-            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-            <span>Manama Financial District, Tower 4, Suite 802, Kingdom of Bahrain</span>
+            <i class="fas fa-location-dot" aria-hidden="true"></i>
+            <span>Manama Corporate District, Tower 4, Suite 802, Kingdom of Bahrain</span>
           </li>
           <li>
             <i class="fas fa-phone" aria-hidden="true"></i>
@@ -269,15 +288,15 @@
           </li>
           <li>
             <i class="fas fa-envelope" aria-hidden="true"></i>
-            <span>info@captntrading.com</span>
+            <span>sys@captntrading.com</span>
           </li>
         </ul>
         
-        <h3 style="margin-top: 1.5rem; font-size: 1rem;">Newsletter Subscription</h3>
+        <h3 style="margin-top: 1.5rem; font-size: 0.95rem;">System Briefings</h3>
         <form class="newsletter-form" id="newsletter-subscription-form">
           <div class="newsletter-group">
-            <input type="email" placeholder="Your email address" aria-label="Newsletter email address" required id="newsletter-email-input">
-            <button type="submit" aria-label="Subscribe to newsletter" id="newsletter-submit-btn"><i class="fas fa-paper-plane"></i></button>
+            <input type="email" placeholder="Your terminal email" aria-label="Email" required id="newsletter-email-input">
+            <button type="submit" id="newsletter-submit-btn"><i class="fas fa-paper-plane"></i></button>
           </div>
         </form>
       </div>
@@ -285,21 +304,21 @@
 
     <!-- Footer Bottom -->
     <div class="container footer-bottom">
-      <p>&copy; 2026 CAPTN TRADING. All Rights Reserved. Commercial Registration No: 140234-1.</p>
+      <p>&copy; 2026 CAPTN TRADE OS. All Logs Protected. CR: 140234-1.</p>
       <div class="footer-bottom-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="contact.html">Sitemap</a>
+        <a href="#">Security Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="contact.html">Diagnostics</a>
       </div>
     </div>
   </footer>
 
-  <!-- Floating Widgets -->
-  <a href="https://wa.me/97317200450" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with CAPTN TRADING sales support on WhatsApp" id="whatsapp-floating-widget">
+  <!-- Floating HUD elements -->
+  <a href="https://wa.me/97317200450" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Node Link" id="whatsapp-floating-widget">
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <button class="back-to-top" aria-label="Scroll back to top of the page" id="back-to-top-widget">
+  <button class="back-to-top" aria-label="Reset position" id="back-to-top-widget">
     <i class="fas fa-arrow-up"></i>
   </button>
 
