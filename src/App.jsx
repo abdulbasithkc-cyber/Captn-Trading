@@ -4,7 +4,11 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
+import Features from './components/Features';
+import Products from './components/Products';
 import QuoteWizard from './components/QuoteWizard';
+import Faq from './components/Faq';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
@@ -36,10 +40,45 @@ function App() {
 
       {/* Sections Wrapper */}
       <main className="relative z-10">
+        
+        {/* 1. Hero Section */}
         <Hero />
+        
+        <div className="neon-line-vertical" />
+        
+        {/* 2. About Section */}
         <About />
+        
+        <div className="neon-line-horizontal" />
+        
+        {/* 3. Services Section */}
         <Services />
+        
+        <div className="neon-line-vertical" />
+        
+        {/* 4. Features Section */}
+        <Features />
+        
+        <div className="neon-line-horizontal" />
+        
+        {/* 5. Products Section */}
+        <Products />
+        
+        <div className="neon-line-vertical" />
+        
+        {/* 6. Quote Wizard Section */}
         <QuoteWizard />
+        
+        <div className="neon-line-horizontal" />
+        
+        {/* 7. FAQ Section */}
+        <Faq />
+        
+        <div className="neon-line-vertical" />
+        
+        {/* 8. Contact Section */}
+        <Contact />
+        
       </main>
 
       {/* OS Footer */}
