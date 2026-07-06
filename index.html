@@ -41,7 +41,7 @@
       </nav>
       
       <div class="nav-cta">
-        <button class="btn-filled btn-login" id="nav-login-btn">Login</button>
+        <a href="https://kc-family-holdings-manager.vercel.app/" class="btn-filled btn-login" target="_blank" rel="noopener" id="nav-login-btn">Login</a>
       </div>
 
       <button class="hamburger" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu" id="mobile-hamburger">
@@ -298,7 +298,7 @@
             <h4>Corporate</h4>
             <div class="footer-menu-links">
               <a href="https://github.com/abdulbasithkc-cyber/Captn-Trading" target="_blank" rel="noopener">GitHub Repository</a>
-              <a href="#home" class="btn-login">Client Portal Login</a>
+              <a href="https://kc-family-holdings-manager.vercel.app/" class="btn-login" target="_blank" rel="noopener">Client Portal Login</a>
               <a href="#">Privacy Policy</a>
             </div>
           </div>
@@ -364,54 +364,6 @@
     </div>
   </div>
 
-  <!-- 10. Frosted Secure Client Login Modal Overlay -->
-  <div id="login-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="login-title" aria-describedby="login-desc">
-    <div class="modal-container">
-      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
-      
-      <!-- Form Input State -->
-      <div class="modal-form-fields">
-        <h2 id="login-title" class="modal-title" style="font-size: 1.75rem;">Security Gateway Access</h2>
-        <p id="login-desc" class="modal-desc">Authorize your terminal connection to access client orders and logistics updates.</p>
-        
-        <form id="modal-login-form" novalidate>
-          <div class="dark-form-group">
-            <label for="login-email" class="dark-label">Client Identifier (Email) <span style="color: var(--cyan);">*</span></label>
-            <input type="email" id="login-email" name="login_email" class="dark-input" placeholder="client@company.com" required>
-          </div>
-
-          <div class="dark-form-group">
-            <label for="login-password" class="dark-label">Access Cipher (Password) <span style="color: var(--cyan);">*</span></label>
-            <input type="password" id="login-password" name="login_password" class="dark-input" placeholder="••••••••••••" required>
-          </div>
-
-          <div class="btn-glow-container" style="width: 100%; margin-top: 2rem;">
-            <div class="btn-glow-bg"></div>
-            <button type="submit" class="btn-glow-content" style="justify-content: center;">
-              Authorize Connection <i class="fas fa-shield-halved" style="font-size: 0.85rem;"></i>
-            </button>
-          </div>
-        </form>
-      </div>
-
-      <!-- Success Screen / Futuristic Matrix Terminal (Faded in via JS) -->
-      <div class="modal-success-card form-success-message" style="display: none; flex-direction: column; align-items: center; text-align: center; justify-content: center; padding: 1rem 0;">
-        <i class="fas fa-shield-check" style="font-size: 3rem; color: var(--cyan); margin-bottom: 1rem; text-shadow: 0 0 25px rgba(0, 242, 254, 0.45);"></i>
-        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--text-white);">Access Authorized</h3>
-        <p style="color: var(--text-gray); font-size: 0.9rem; margin-bottom: 0;">Secure link established with KC FAMILY HOLDINGS servers.</p>
-        
-        <!-- Terminal Mock Screen -->
-        <div class="terminal-screen">
-          <div class="terminal-line tl-1">> Authenticating client node... [OK]</div>
-          <div class="terminal-line tl-2">> Resolving GCC trade security tokens... [OK]</div>
-          <div class="terminal-line tl-3">> Fetching localized logistics logs... [DONE]</div>
-          <div class="terminal-line tl-4">> Welcome back, Admin. Loading portal...</div>
-        </div>
-        
-        <button class="btn btn-ghost btn-sm" style="margin-top: 2rem; padding: 0.5rem 1.5rem;" onclick="document.querySelector('#login-modal .modal-close-btn').click()">Disconnect Terminal</button>
-      </div>
-    </div>
-  </div>
 
   <!-- Master JavaScript File -->
   <script src="assets/js/main.js"></script>

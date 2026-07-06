@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollReveals();
   initCardTilts();
   initContactModal();
-  initLoginModal();
 });
 
 /* ==========================================================================
@@ -378,92 +377,4 @@ function initContactModal() {
   }
 }
 
-/* ==========================================================================
-   7. Login Modal Overlay Control
-   ========================================================================== */
-function initLoginModal() {
-  const loginBtns = document.querySelectorAll('.btn-login');
-  const modal = document.getElementById('login-modal');
-  if (!modal) return;
 
-  const closeBtn = modal.querySelector('.modal-close-btn');
-  const loginForm = document.getElementById('modal-login-form');
-  const formFields = modal.querySelector('.modal-form-fields');
-  const successCard = modal.querySelector('.modal-success-card');
-  const submitBtn = modal.querySelector('button[type="submit"]');
-
-  // Open modal
-  loginBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      modal.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    });
-  });
-
-  // Close modal
-  const closeModal = () => {
-    modal.classList.remove('active');
-    document.body.style.overflow = 'auto';
-    
-    setTimeout(() => {
-      if (formFields && successCard) {
-        formFields.style.display = 'block';
-        successCard.style.display = 'none';
-      }
-    }, 400);
-  };
-
-  if (closeBtn) {
-    closeBtn.addEventListener('click', closeModal);
-  }
-
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      closeModal();
-    }
-  });
-
-  // Esc key close
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('active')) {
-      closeModal();
-    }
-  });
-
-  // Form submission
-  if (loginForm) {
-    loginForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-
-      let isValid = true;
-      const inputs = loginForm.querySelectorAll('[required]');
-      
-      inputs.forEach(input => {
-        if (!input.value.trim()) {
-          isValid = false;
-          input.style.borderColor = 'rgba(239, 68, 68, 0.4)';
-        } else {
-          input.style.borderColor = 'rgba(255, 255, 255, 0.06)';
-        }
-      });
-
-      if (!isValid) return;
-
-      const originalBtnText = submitBtn.innerHTML;
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = 'Verifying security signature...';
-
-      setTimeout(() => {
-        loginForm.reset();
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalBtnText;
-        
-        if (formFields && successCard) {
-          formFields.style.display = 'none';
-          successCard.style.display = 'flex';
-        }
-      }, 1800);
-    });
-  }
-}
